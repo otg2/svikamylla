@@ -1,0 +1,276 @@
+body
+{
+  background-color: black;
+  overflow-x: hidden;
+}
+@font-face
+{
+  font-family: 'HatariBaaaaa';
+  src:
+   url('Hatari-Final-Regular.otf') format('truetype');
+}
+
+@font-face
+{
+font-family: 'OptimumCompress';
+src:
+ url('Optimum_Compress_1.07.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'svik_FGB';
+    src: url("FGB.woff") format('woff');
+}
+@font-face {
+    font-family: 'svik_FGI';
+    src: url("FGI.woff") format('woff');
+}
+
+a.hatari {
+  font-family: "HatariBaaaaa", sans-serif ;
+  margin:0px;
+  color:#AA1A00;font-size:4em; letter-spacing: 0.2em;
+}
+.gurk {
+font-family: "svik_FGB", sans-serif;
+font-size:2em;
+color:white;text-decoration: none;
+text-align: center;
+margin-top: 15%;
+}
+a.gurk:hover{
+  font-family: "svik_FGI", sans-serif;
+  font-size:2em;
+  color:white;text-decoration: none;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.infoWrap
+{
+ display:block;
+ color:white;
+ position:relative;
+ left:13%;
+ max-width: 80%;
+ text-align: center;
+ vertical-align: middle;
+}
+
+.logoImage
+{
+ position:absolute;
+ vertical-align: middle;
+ left: 25%;
+ margin-top:8%;
+ max-width: 50%;
+ -moz-user-select: none;
+ -webkit-user-select: none;
+ user-select: none;
+}
+
+#svik_hand.logoImage
+{
+ z-index: 5;
+}
+#svik_blade.logoImage
+{
+ z-index: 1;
+
+}
+#svik_world.logoImage
+{
+ z-index: 2;
+
+}
+.outer {
+   height: 60%;
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.middle {
+   vertical-align: middle;
+   position: relative;
+   /*border:2px solid blue;*/
+}
+
+.inner {
+   margin-left: auto;
+   margin-right: auto;
+   width:100%;
+}
+
+.spinForw {
+ -webkit-animation-name: spin;
+ -webkit-animation-duration: 40000ms;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-animation-timing-function: linear;
+ -moz-animation-name: spin;
+ -moz-animation-duration: 40000ms;
+ -moz-animation-iteration-count: infinite;
+ -moz-animation-timing-function: linear;
+ -ms-animation-name: spin;
+ -ms-animation-duration: 40000ms;
+ -ms-animation-iteration-count: infinite;
+ -ms-animation-timing-function: linear;
+ -o-transition: rotate(3600deg);
+}
+@-ms-keyframes spin {
+   from { -ms-transform: rotate(0deg); }
+   to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+   from { -moz-transform: rotate(0deg); }
+   to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+   from { -webkit-transform: rotate(0deg); }
+   to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+   from {
+       transform:rotate(0deg);
+   }
+   to {
+       transform:rotate(360deg);
+   }
+}
+
+.spinBack {
+ -webkit-animation-name: spin_back;
+ -webkit-animation-duration: 40000ms;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-animation-timing-function: linear;
+ -moz-animation-name: spin_back;
+ -moz-animation-duration: 40000ms;
+ -moz-animation-iteration-count: infinite;
+ -moz-animation-timing-function: linear;
+ -ms-animation-name: spin_back;
+ -ms-animation-duration: 40000ms;
+ -ms-animation-iteration-count: infinite;
+ -ms-animation-timing-function: linear;
+ -o-transition: rotate(3600deg);
+}
+@-ms-keyframes spin_back {
+   from { -ms-transform: rotate(360deg); }
+   to { -ms-transform: rotate(0deg); }
+}
+@-moz-keyframes spin_back {
+   from { -moz-transform: rotate(360deg); }
+   to { -moz-transform: rotate(0deg); }
+}
+@-webkit-keyframes spin_back {
+   from { -webkit-transform: rotate(360deg); }
+   to { -webkit-transform: rotate(0deg); }
+}
+@keyframes spin_back {
+   from {
+       transform:rotate(360deg);
+   }
+   to {
+       transform:rotate(0deg);
+   }
+}
+.hover {
+ -webkit-animation-name: hover;
+ -webkit-animation-duration: 4000ms;
+ -webkit-animation-iteration-count: infinite;
+ -webkit-animation-timing-function:ease-in-out;
+ -webkit-animation-direction: alternate-reverse;
+ -moz-animation-name: hover;
+ -moz-animation-duration: 4000ms;
+ -moz-animation-iteration-count: infinite;
+ -moz-animation-timing-function: ease-in-out;
+ -moz-animation-direction: alternate-reverse;
+ -ms-animation-name: hover;
+ -ms-animation-duration: 4000ms;
+ -ms-animation-iteration-count: infinite;
+ -ms-animation-timing-function: ease-in-out;
+ -ms-animation-direction: alternate-reverse;
+}
+@-ms-keyframes hover {
+   from { -ms-transform: translate(0px,0px); }
+   to { -ms-transform: translate(0px,10px); }
+}
+@-moz-keyframes hover {
+   from { -moz-transform: translate(0px,0px); }
+   to { -moz-transform: translate(0px,10px); }
+}
+@-webkit-keyframes hover {
+   from { -webkit-transform: translate(0px,0px); }
+   to { -webkit-transform: translate(0px,10px); }
+}
+
+.absFix
+{
+ display:block;
+ height:900px;
+ width: 100%;
+}
+
+#top
+{
+  clear:both;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}
+#left
+{
+  float:left;
+}
+#right
+{
+  float:right;
+}
+#bottom{
+  clear:both;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+.textInfo
+{
+  color:white;
+  font-size:2em;
+  font-family: 'svik_FGB', sans-serif;
+  text-decoration: none;
+}
+a.textInfo:hover
+{
+  color:white;
+  font-size:2em;
+  font-family: 'svik_FGI', sans-serif;
+  text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 300px) {
+  .gurk {
+  font-family: "svik_FGB", sans-serif;
+  font-size:2em;
+  margin:2% 10%;color:white;text-decoration: none;
+  text-align: center;
+  margin-top: 45%;
+
+  }
+
+
+  .logoImage
+  {
+   position:absolute;
+   vertical-align: middle;
+   left: 25%;
+   margin-top:70%;
+   max-width: 50%;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
+  }
+}
